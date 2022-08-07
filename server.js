@@ -5,7 +5,7 @@ const port = 3000                                           // Define port
 
 // Create the server
 const server = http.createServer(function(req, res){
-    res.writeHead(200, { "Contect-Type": "text/html"})      // Response statuscode 200 [OK], tells the information is in HTML
+    res.writeHead(200, { "Contect-Type": "text/html"})      // Response statuscode 200 [OK], tells the information its in HTML
     fs.readFile("index.html", function(error, data){        // Read the index.html file and check for error
         if (error) {                                        // If error is true run this part
             res.writeHead(404)                              // Response statuscode 404 [File not found]
